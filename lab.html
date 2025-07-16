@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark - Experiments</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="nav-wrapper">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="lab.html">Lab</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <hr>
+        <h1>Experiments</h1>
+        <hr>
+      </header>
+    </section>
+
+    <section>
+        <h2>Drink Menu</h2>
+        <form action="order.html" method="get">
+            <fieldset>
+            <legend>Choose a drink</legend>
+            <label for="drink">Drink:</label>
+            <select name="drink" id="drink">
+                <optgroup label="Beer">
+                <option value="Heineken">Heineken</option>
+                <option value="Sapporo">Sapporo</option>
+                </optgroup>
+                <optgroup label="Coffee">
+                <option value="Cappuccino">Cappuccino</option>
+                <option value="Americano">Americano</option>
+                </optgroup>
+            </select>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <label for="project">Completion:</label>
+        <progress id="project" value="80" max="100"> 80% </progress>
+    </section>
+
+
+    <audio controls>
+        <source src="audio/audiotest.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <video width="320" height="240" controls>
+        <source src="/video/videotest.mp4" type="video/mp4">
+    </video>
+
+
+    <search>
+        <form>
+            <input name="search" id="search" placeholder="keyword">
+        </form>
+    </search>
+
+    <figure>
+        <img src="/image/figuretest.jpg" alt="dog" style="width:100%">
+        <figcaption>Figure 1 - Black Dog.</figcaption>
+        <p><cite>Black Dog Standing Alone on Snowy Landscape</cite> by Jordi Costa Tomé</p>
+    </figure>
+
+    <section>
+        <p>I like <del>motorcycles</del> <ins>cars</ins></p>
+        <dialog open>I love looking at sunsets.</dialog>
+    </section>
+    
+    <hgroup>
+        <h2>Mercedes</h2>
+        <p>Symbol of German Engineering.</p>
+    </hgroup>
+
+    <hello-world></hello-world>
+
+    <script>
+    class HelloWorld extends HTMLElement {
+        connectedCallback() {
+        console.log("Hello world!");
+        }
+    }
+
+    customElements.define('hello-world', HelloWorld);
+    </script>
+
+
+</main>
