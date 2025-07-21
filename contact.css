@@ -1,0 +1,31 @@
+.contact-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    h2 {
+        text-align: center;
+        color: rgb(24, 99, 198);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0.75rem 0;
+    }
+
+    a {
+        color: rgb(22, 129, 196);
+        text-decoration: none;
+        border-bottom: 1px dashed rgb(22, 129, 196);
+        transition: border-bottom-color 0.2s;
+
+        &:hover {
+        border-bottom-color: transparent;
+        }
+    }
+}

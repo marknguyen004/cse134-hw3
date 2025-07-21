@@ -1,0 +1,32 @@
+* { 
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+header nav {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:red;
+    text-decoration: underline;
+}
+
+main > section > header {
+    text-align: center;
+    color: blue;
+}
+
